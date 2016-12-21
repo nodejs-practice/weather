@@ -7,4 +7,8 @@ Bootstrap contains css, js and fonts. CSS folder contains 2 files, bootstrap and
 * Add script code to support IE<9 for html5 support
 * before body close tag, reference jquery and bootstrap js files.
 
-
+class=row
+class=col-lg-12, col-md-12, col-sm-12, col-xs-12
+class=row-fluid
+container, container-fluid
+col-lg-offset-4 
