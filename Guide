@@ -1,0 +1,10 @@
+Bootstrap
+Bootstrap contains css, js and fonts. CSS folder contains 2 files, bootstrap and theme.
+
+# Steps in html file
+* 3 required head tags for bootstrap = meta charset=utf-8, meta http-equiv=X-UA-Compatible content=ID=edge and meta name=viewport content=width=device-width, initial-scale=1
+* Reference CSS files.
+* Add script code to support IE<9 for html5 support
+* before body close tag, reference jquery and bootstrap js files.
+
+
