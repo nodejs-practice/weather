@@ -1,4 +1,5 @@
 GIT
+FROM GIT REAL VIDEO
 Distributed version control system
 created by Linus Torvalds
 
@@ -14,8 +15,35 @@ git init
 untracked > staging > commit
 
 git status
-git add <filename>
+git add <filename> or git add <files,> or git add --all
+git add *.txt, git add docs/*.txt, git add docs/
+git add "*.txt" --> with quotes will add all text fiels in whole project
 git commit -m "Desc"
+
+git log
+
+LEVEL II
+git diff
+git diff --staged
+git reset HEAD <file> --> to unstage
+git checkout --<file> -->file get restored to last commit, will lose all modifications since commit
+
+git commit -a -m "desc" --> add stage and commit at once, doesnt add untracked files which means new files will not be committed
+git reset --soft HEAD^ -> undo last commit and put changes into staging
+
+> git add todo.txt
+> git commit --amend -m "new comment for amending last commit"
+
+git reset --hard HEAD^ -> undo last commit and all changes
+git reset --hard HEAD^^ -> undo last 2 commits and all changes
+
+git remote add origin <git url>
+git remove -v
+git push -u origin master --> origin is remote repository name, master is the local branch to push
+
+git pull
+
+
 
 
 ------
