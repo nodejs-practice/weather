@@ -11,3 +11,5 @@ CONFIGURING LINE ENDINGS
 git config --global core.autocrlf true
 
 I added this line on github site.
+
+I added this line locally.
