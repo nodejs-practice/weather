@@ -57,9 +57,15 @@ Git clone downloads repo and adds 'origin' remote to the clone url
 
 BRANCHING OUT
 When you start working on a feature, its best to add a branch and work on it.
-git branch cat -> creates branch named cat
+git branch cat -> creates branch named cat, will not checkout
 git branch -> lists all branches and the current one checked out
 git checkout cat -> switch to branch cat
+git checkout -b cat -> will create branch and checks out
+
+git merge cat -> will merge commits made in cat
+git branch -d cat -> will remove cat branch
+
+ADMIN FEATURES
 
 
 ------
