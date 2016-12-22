@@ -65,8 +65,38 @@ git checkout -b cat -> will create branch and checks out
 git merge cat -> will merge commits made in cat
 git branch -d cat -> will remove cat branch
 
-ADMIN FEATURES
-Test
+git pull = git fetch + git merge origin/master
+
+REMOTE BRANCHES AND tags
+git push origin shopping_cart --> adds shopping_cart branch to remote
+git branch -r --> will show all remote branches
+git remote show origin
+git push origin :shopping_cart --> deletes remote branch, but not local branch
+git branch -d shopping_cart --> may warn if commits are not merged anywhere
+git branch -D shopping_cart --> delete anyway
+git remote prune origin --> clean up old stale branches
+git push heroku-staging staging:master --> will push and deploy staging on heroku, local:remote
+
+Tags
+reference to a specific commit
+git tag --> list all tags
+git checkout tagname --> checkout a commit
+git tag -a tagname -m "comment" --> to add a new tag
+git push --tags --> push tags to remotes
+
+REBASE
+git rebase.
+1. moves all changes to master which are not on origin/master to a temp area
+2. run all orign/master commit
+3. run all commites in temp area one at a time
+
+git checkout admin
+git rebase master
+
+git checkout master
+git merge admin
+
+
 
 ------
 Bootstrap
