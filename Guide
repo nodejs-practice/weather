@@ -37,13 +37,29 @@ git reset --soft HEAD^ -> undo last commit and put changes into staging
 git reset --hard HEAD^ -> undo last commit and all changes
 git reset --hard HEAD^^ -> undo last 2 commits and all changes
 
-git remote add origin <git url>
-git remove -v
+git remote add <name> <git url> 
+git remote rm <name>
+git remote -v
 git push -u origin master --> origin is remote repository name, master is the local branch to push
 
 git pull
 
+HEROKU
+heroku create
+git push will trigger deployment by heroku
 
+LEVEL III
+CLONE repository
+git clone <git url>
+GIT CLONE <GIT URL> name
+
+Git clone downloads repo and adds 'origin' remote to the clone url
+
+BRANCHING OUT
+When you start working on a feature, its best to add a branch and work on it.
+git branch cat -> creates branch named cat
+git branch -> lists all branches and the current one checked out
+git checkout cat -> switch to branch cat
 
 
 ------
