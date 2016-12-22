@@ -10,3 +10,4 @@ git config --global --list --> displays all global config values
 CONFIGURING LINE ENDINGS
 git config --global core.autocrlf true
 
+I added this line on github site.
