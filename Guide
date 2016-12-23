@@ -1,3 +1,40 @@
+PRO GIT
+
+CHAPTER 1: GETTING STARTED
+Version control: System that records changes to a file or set of files over time so that you recall specific versions later
+Local Version Cotrol Systems
+* Keeping file copies in timestamped directories
+* RCS: Keeps patch sets (difference between files) in a specific format. It will recreate a file by adding up all the patches.
+Centralized Version Control Systems
+CVS, Subversion and Perforce
+Distributed Version Control Systems
+Git, Mercurial, Bazaar or Darcs
+
+History
+Born in 2005
+
+Git Basics
+* Snapshots, not differences
+* Nearly every operation is local
+* Git has integrity: Everything in Git is check-summed before it is stored and is then referred to by that checksum
+* Git generally only adds data
+* The three states: committed, modified and staged
+* Git directory stores metadata and object database. This is what is copied when you clone a repository from another computer.
+* Staging area is generally a file contained in the Git directory which stroes information about what will go into next commit.
+
+Basic Git workflow
+1. You modify files in your working directory.
+2. You stage the files, adding snapshots of them to your staging area.
+3. You do a commit, which takes the files as they are in the staging area and stores the snapshot permanantly to your Git directory.
+
+First-time Git setup
+* git config
+
+
+
+
+
+~~~
 GIT
 FROM GIT REAL VIDEO
 Distributed version control system
