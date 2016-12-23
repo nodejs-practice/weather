@@ -2,11 +2,14 @@ PRO GIT
 
 CHAPTER 1: GETTING STARTED
 Version control: System that records changes to a file or set of files over time so that you recall specific versions later
+
 Local Version Cotrol Systems
 * Keeping file copies in timestamped directories
 * RCS: Keeps patch sets (difference between files) in a specific format. It will recreate a file by adding up all the patches.
+
 Centralized Version Control Systems
 CVS, Subversion and Perforce
+
 Distributed Version Control Systems
 Git, Mercurial, Bazaar or Darcs
 
@@ -20,7 +23,7 @@ Git Basics
 * Git generally only adds data
 * The three states: committed, modified and staged
 * Git directory stores metadata and object database. This is what is copied when you clone a repository from another computer.
-* Staging area is generally a file contained in the Git directory which stroes information about what will go into next commit.
+* Staging area is generally a file contained in the Git directory which stores information about what will go into next commit.
 
 Basic Git workflow
 1. You modify files in your working directory.
@@ -28,9 +31,46 @@ Basic Git workflow
 3. You do a commit, which takes the files as they are in the staging area and stores the snapshot permanantly to your Git directory.
 
 First-time Git setup
-* git config
+- git config
+git config lets you get and set configuration variables.
 
+Places where git stores config variables.
+* /etc/gitconfig or c:\ProgramData\Git\config on windows - system values. On windows this file could only be changed by git config -f <file> as an admin.
+* ~/.gitconfig or ~./config/git/config or %userprofile% folder on windows - global values
+* .git/config - local values
 
+Your Identity
+> git config --global user.name "John Doe"
+> git config --global user.email johndoe@example.com
+
+Your Editor
+> $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"
+> $ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"
+
+Checking your Settings
+> git config --list -> will list all config values
+
+1.7 Getting help
+> git help <verb>
+> git <verb> --help
+> man git-<verb>
+
+CHAPTER 2: GIT Basics
+2.1 Getting a Git Repository
+
+git init - start tracking an existing directory
+git add - will add specified files that you want to track
+git commit -m <comment> - commits the added files
+git clone <url> - will clone an existing repository. Will create a directory and initializes .git directory inside it. It pulls down all the data and checks out a working copy of the latest version.
+git clone <url> <directoryName> - custom directory name
+
+2.2 Recording changes to repository
+git status - determine the state of the files
+Default branch name is master
+Untracked files - Files that are present in the directory which are not part of the repository. New files.
+git add <file> - multi purpose command. you use it to  begin tracking files, to stage files and do other things like marking merge-conflicted files as resolved.
+
+Read from Short Status
 
 
 
