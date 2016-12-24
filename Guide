@@ -96,6 +96,27 @@ git rm - also removes the file from working directory
 git rm -f <file> - will remove from index too.
 git rm --cached <file> - will remove from staging
 
+Moving files
+git mv filename1 filename2 -> renames files
+
+2.3 Viewing Commit History
+git log
+git log -p -2 => shows difference introduced in each commit, only shows last 2 commits
+git log --stat => shows list of files modified
+git log --pretty=oneline
+git log --pretty --oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty --graph
+git log --since=2.weeks
+git log --since=1.day
+git log -Sfunction_name -> shows commits only with reference function_name
+
+2.4 Undoing things
+git commit --amend
+
+Unstaging a staged file
+git reset HEAD file --> to unstage a file
+git checkout -- file --> to make file look like last commit
 
 
 
