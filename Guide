@@ -70,7 +70,33 @@ Default branch name is master
 Untracked files - Files that are present in the directory which are not part of the repository. New files.
 git add <file> - multi purpose command. you use it to  begin tracking files, to stage files and do other things like marking merge-conflicted files as resolved.
 
-Read from Short Status
+Short Status
+git status -s or git status -short
+
+Ignoring files
+.gitignore
+https://github.com/github/gitignore
+
+Viewing your staged and unstaged changes
+git diff - compares working directory with staging area
+git diff -staged - to see what will go in commit. -staged and -cached are synonymous
+git difftool - will show diff in an external tooltip
+
+Committing changes
+git commit - will launch editor for you to type commit message.
+git commit -v - will include diff in the commit message.
+git commit -m "Commit message"
+
+Skipping the staging area
+git commit -a -m "commit message"
+
+Removing files
+To remove a file from git, you have to remove it from your tracked files, which means remove it from staging area and then commit.
+git rm - also removes the file from working directory
+git rm -f <file> - will remove from index too.
+git rm --cached <file> - will remove from staging
+
+
 
 
 
