@@ -127,7 +127,15 @@ git remote add <shortname> <url>
 git fetch pb -> will fetch all information that pb has into pb/master. you can then merge that info into your local branch or create a new branch
 
 Fetching and Pulling from your Remotes
-git fetch [remote-name] - pulls down data from remote project that you don't have
+git fetch [remote-name] - pulls down data from remote project that you don't have. It only fetches and doesn;t merge with your local work.
+
+git pull -> fetches from the server and merges code into your local repository
+
+Pushing to your remotes
+git push [remote-name] [branch-name]
+
+Inspecting a Remote
+git remote show [remote-name]
 
 
 
