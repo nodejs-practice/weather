@@ -137,6 +137,50 @@ git push [remote-name] [branch-name]
 Inspecting a Remote
 git remote show [remote-name]
 
+Removing and Renaming Remotes
+git remote rename pb paul -> will rename pb to paul
+git remote rm paul -> will remove paul remote
+
+2.6 Tagging
+Listing your tags
+git tag -> Lists tags in alphabetical order
+git tag -l "v1.8.5*" -> filters
+
+Types
+lightweight - like a branch that doesn't change, just a pointer
+annotated - stored as full objects in Git database. recommeded to create annotated tags
+
+Creating Tags
+Annotated Tags
+git tag -a v1.4 -m "may version 1.4"
+
+git show v1.4 -> shows information about tag
+
+Lightweight Tags
+To create lightweight tags, dont supply -a, -s or -m option
+git tag v1.4-lw
+
+Tagging Later
+git tag -a v1.2 9fceb02
+
+Sharing Tags
+By default, git push doesn't transfer tags to remote servers.
+git push origin [tagname]
+git push origin --tags
+
+Checking out Tags
+git checkout -b [branch-name] [tagname]
+
+2.7 Git Aliases
+If you don't want to type the entire text of each of the Git commands, you can set aliases with git config command
+
+eg: git config --global alias.co checkout
+eg: git config --global alias.unstage 'reset HEAD --'
+git unstage fileA will now mean git reset HEAD -- fileA
+
+
+
+
 
 
 
