@@ -178,7 +178,43 @@ eg: git config --global alias.co checkout
 eg: git config --global alias.unstage 'reset HEAD --'
 git unstage fileA will now mean git reset HEAD -- fileA
 
+CHAPTER 3: GIT BRANCHING
+Branching means diverging from the main line of development and continue to work without messing with that mainline
 
+The default branch name in Git is master.
+
+Creating a new Branch
+git branch [branch-name]
+
+In Git, a HEAD is a pointer to the local branch that you're currently on.
+
+git log --oneline --decorate => shows where the branch pointers are pointing
+
+Switching Branches
+git checkout [branch-name] => This moves HEAD to point to the testing branch
+
+git log --oneline --decorate --graph --all
+
+3.2 Basic Branching and Merging
+git checkout -b branchname is shortcut for git branch branchname and git checkout branchname
+
+git checkout master
+git merge hotfix
+
+git branch -d hotfix -> deletes the branch
+
+Basic Merging
+Basic Merge conflicts
+After you resolve the conflicts, run git add on each file to mark it as resolved. Staging the file marks it as resolved in Git.
+
+git mergetool -> fires up an appropriate visual merge tool and walks you through the conflicts.
+
+3.3 Branch Management
+
+git branch -> lists all current branches. * shows the current branch that you are on.
+git branch -v -> shows the last commit in all the branches
+git branch --merged -> shows branches that are already merged into the current branch
+git branch --no-merged -> shows branches that are not merged
 
 
 
