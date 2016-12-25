@@ -216,6 +216,40 @@ git branch -v -> shows the last commit in all the branches
 git branch --merged -> shows branches that are already merged into the current branch
 git branch --no-merged -> shows branches that are not merged
 
+3.4 Branching Workflows
+Some strategies.
+Long-running Branches
+Topic Branches
+
+3.5 Remote Branches
+git fetch origin -> will fetch data from remote(origin) and update our local origin/master branch
+
+Pushing
+git push <remote> <branch>
+git push <remote> <localbranch:remotebranch>
+
+git checkout -b serverfix origin/serverfix -> will create a localbranch from remove serverfix branch
+
+Tracking Branches
+git branch -u origin/serverfix -> sets upstream of current branch to remote serverfix branch
+
+git branch -vv -> displays alll tracking branches
+git fetch --all -> will fetch all remote branches
+
+Pulling
+git pull => git fetch + git merge
+
+Deleting remote branches
+git push origin --delete serverfix => will delete serverfix from remote
+
+3.6 Rebasing
+Two main ways to integrate changes from one branch into another: merge and rebase
+
+Basic Rebase
+git checkout experiment
+git rebase master
+
+Read from More Interesting Rebases
 
 
 
