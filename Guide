@@ -251,9 +251,25 @@ git rebase master
 
 Todo: Read and under Rebasing later.
 
+CHAPTER 4: GIT ON THE SERVER - THE PROTOCOLS
+The PROTOCOLS
+* Local
+* http
+* Secure Shell (SSH)
+* Git
 
+Skipped the chapter
 
+CHAPTER 5: DISTRIBUTED GIT - DISTRIBUTED WORKFLOWS
+Distributed Workflows
+* Centralized Workflow
+* Integration-Manager Workflow
+* Dicator and Lieutantants Workflow
 
+Contributing to a project
+git diff --check -> shows whitespace errors
+
+stopped here... lot of advanced topics to read later
 ~~~
 GIT
 FROM GIT REAL VIDEO
