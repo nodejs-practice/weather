@@ -1,0 +1,66 @@
+Learn and Understand Node.js
+11 Chapters, 11 days, Staring on 26 Dec 2016
+
+V8 - The Javascript Engine
+Procesors
+We give instructions(code) to processors (tiny machine). Not all processors speak the same code.
+Processors may speak IA-32, X86-64, ARM, MIPS
+
+Machine Code (Machine Language): Programming language spoken by computer processors. Every program you run on your computer has been converted (compiled) into machine code.
+
+Javascript > C/C++ > Assembly Language > Machine language
+Javascript is a high level language. We write programs that other programs will convert to machine language.
+
+Node is written in C++. Because, V8, the javascript engine is written in C++.
+
+EMCAScript: The standard javascript is based on.
+Javascript Engine: A program that converts Javascript code into something the computer processor can understand. And it should follow the ECMAScript standard.
+
+NodeJS is a C++ program with V8 embedded to make it suitable to be a server technology.
+
+Servers and Clients
+What does Javascript need to manage a server.
+* Better ways to organize our code into reusable pieces
+* Ways to deal with files
+* Ways to deal with databases
+* Ability to communicate over the internet.
+* Ability to accept requests and send responses.
+* Way to deal with work that takes a long time.
+
+Node Core
+* The C++ Core
+* The Javascript Core
+
+Install Node
+node -v => shows version
+
+Modules, Exports and Requires
+Modules: A reusable block of code whose existence does not accidentally impact other code.
+Javascript has modules since ES2016
+
+CommonJS modules: Agreed upon standard for how code modules should be structured
+
+First-class functions and function expressions
+Functions in javascript are first-class. That means we can pass them around like variables.
+
+Modules
+require('./module.js');
+
+MOdule is self-contained. Functions declared inside it, will not overwrite outside.
+module.exports = functionname;
+
+Immediately Invoked Function Expressions (IIFE)
+
+JSON: Javascript object notation
+
+Module patterns
+* module.exports = function() {}
+
+* module.exports.greet = function() {}
+* var greet = require('./greet.js').greet;
+
+* Constructor and module.exports = new Greetr();
+
+Requiring same module again will display cached results. So new object pointing to same require will point to old object.
+
+
