@@ -15,4 +15,16 @@ module.exports = functionname;
 
 Immediately Invoked Function Expressions (IIFE)
 
+JSON: Javascript object notation
+
+Module patterns
+* module.exports = function() {}
+
+* module.exports.greet = function() {}
+* var greet = require('./greet.js').greet;
+
+* Constructor and module.exports = new Greetr();
+
+Requiring same module again will display cached results. So new object pointing to same require will point to old object.
+
 
