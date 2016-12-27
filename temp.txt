@@ -1,0 +1,18 @@
+Modules, Exports and Requires
+Modules: A reusable block of code whose existence does not accidentally impact other code.
+Javascript has modules since ES2016
+
+CommonJS modules: Agreed upon standard for how code modules should be structured
+
+First-class functions and function expressions
+Functions in javascript are first-class. That means we can pass them around like variables.
+
+Modules
+require('./module.js');
+
+MOdule is self-contained. Functions declared inside it, will not overwrite outside.
+module.exports = functionname;
+
+Immediately Invoked Function Expressions (IIFE)
+
+
