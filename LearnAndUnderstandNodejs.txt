@@ -58,9 +58,35 @@ Module patterns
 
 * module.exports.greet = function() {}
 * var greet = require('./greet.js').greet;
-
 * Constructor and module.exports = new Greetr();
-
 Requiring same module again will display cached results. So new object pointing to same require will point to old object.
+* module.exports = Greetr => give program the ability to create object
+* module.exports exposes only required functions to outside in form of an object
+
+Exports vs Module.exports
+exports is shorthand for module.exports
+Just use module.exports
+
+Node Core Modules
+Check api section in node.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
