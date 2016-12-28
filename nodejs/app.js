@@ -1,5 +1,7 @@
-var a = 1;
-var b = 2;
-var c = a + b;
+var name = 'John Doe';
 
-console.log(c);
+var greet = 'Hello ' + name;
+var greet2 = `Hello ${name}`;
+
+console.log(greet);
+console.log(greet2);

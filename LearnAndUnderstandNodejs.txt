@@ -20,7 +20,7 @@ NodeJS is a C++ program with V8 embedded to make it suitable to be a server tech
 
 Servers and Clients
 What does Javascript need to manage a server.
-* Better ways to organize our code into reusable pieces
+* Better ways to organize our code into reusable pieces - using modules
 * Ways to deal with files
 * Ways to deal with databases
 * Ability to communicate over the internet.
@@ -70,12 +70,42 @@ Just use module.exports
 Node Core Modules
 Check api section in node.js
 
+Modules and ES6
+ES6 has modules built-in.
 
+export and import: put export keyword before function keyword to export in ES6.
 
+FIFTH PART
+Events and the Event Emitter
+Event: Something that has happened in our app that we can respond to.
+In Node we actually talk about two different kinds of events.
+* System Events - comes from the C++ core, thanks to library called libuv. Eg: finished reading file, file open, received data from internet. Things that javascript doesn't have.
+* Custom Events - Javascript core. Javascript library of events that deals with events that we can create ourselves in the code. Event Emitter.
+Often libuv generates a javascript event.
 
+Javascript aside - objects
+obj.greet = obj["greet"]
+Functions are first-class citizens in Javascript. Which means they can be used like string, numbers etc. We can have functions as an item in an array.
 
+Node Event Emitter
+Event Listener: The code that responds to an event. In Javascript's case, the listener will be a function.
+There can be many listeners listening for the same event, and all of them will be invoked when that event happens.
 
+Magic String: A string that has some special meaning in our code.
 
+Object.create and Prototypes
+
+babeljs.io -> compatibility for old js versions
+
+Only for VS Code: use jsconfig.json in the folder to tell VSCode that we are using ES6
+
+Template Literals
+Is a way to concatenate strings in Javascript ES6. EAsier to work than usign + operator.
+
+JS Call and Apply
+Using call, we can send an object for use of this keyword.
+obj.greet.call({name: 'John Doe'}, param1, param2);
+obj.greet.apply({name: 'John Doe'}, [param1, param2]);
 
 
 
